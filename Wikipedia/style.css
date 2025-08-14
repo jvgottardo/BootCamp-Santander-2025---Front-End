@@ -14,11 +14,35 @@ header{
   background-color: white;
 }
 
-nav{
+header nav{
   display: flex;
-  gap: 20px;
+  gap: 67px;
   padding: 5px 10px 10px 5px;
 }
+
+.search-bar{
+  display: flex;
+  gap: 0px;
+}
+
+input{
+  padding: 2px;
+  font-size: 7px;
+  margin: 0;
+  height: 20px;
+   border: black 0.5px solid;
+}
+
+.search-bar button{
+  padding: 2px;
+  font-size: 7px;
+  cursor: pointer;
+  margin: 0;
+   height: 20px;
+   border: black 0.5px solid;
+}
+
+
 
 .logo{
   display: flex;
