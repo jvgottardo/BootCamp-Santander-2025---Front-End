@@ -1,7 +1,7 @@
 # 🚀 BootCamp Santander 2025 - Front-End
 
-![GitHub repo size](https://img.shields.io/github/repo-size/jvgottardo/bootcamp-santander-2025-frontend?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/jvgottardo/bootcamp-santander-2025-frontend?color=brightgreen)
+![GitHub repo size](https://img.shields.io/github/repo-size/jvgottardo/BootCamp-Santander-2025---Front-End?color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/jvgottardo/BootCamp-Santander-2025---Front-End?color=brightgreen)
 ![Status](https://img.shields.io/badge/status-em%20andamento-yellow)
 
 > 📚 Repositório criado para concentrar todos os projetos e exercícios desenvolvidos durante o **BootCamp Santander 2025 - Front-End** oferecido pela [DIO](https://www.dio.me/).
