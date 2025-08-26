@@ -32,4 +32,4 @@ O bootcamp é composto por:
 2. **Exercícios práticos** — fixação do conteúdo.
 3. **Projetos finais** — aplicação real dos conhecimentos.
 
-
+## Para ver os projetos separadamente navegue pelas branchs
