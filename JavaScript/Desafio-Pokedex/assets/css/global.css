@@ -1,0 +1,222 @@
+*{
+   font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+  body{
+      background-color: #f2f2f2;
+  }
+
+  header{
+    background-color: #ececec50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+.search-container button{
+ margin: 0;
+ box-shadow:none;
+}
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+
+.card.grass { background-color: #78C850; }
+.card.poison { background-color: #A040A0; }
+.card.fire { background-color: #F08030; }
+.card.water { background-color: #6890F0; }
+.card.bug { background-color: #A8B820; }
+.card.normal { background-color: #A8A878; }
+.card.electric { background-color: #F8D030; color: #000; }
+.card.ground { background-color: #E0C068; }
+.card.fairy { background-color: #EE99AC; }
+.typcarde.fighting { background-color: #C03028; }
+.card.psychic { background-color: #F85888; }
+.card.rock { background-color: #B8A038; }
+.type.ghost { background-color: #705898; }
+.card.ice { background-color: #98D8D8; color: #000; }
+.card.dragon { background-color: #7038F8; }
+.card.steel { background-color: #B8B8D0; }
+.card.dark { background-color: #705848; }
+
+ .pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* limite no desktop */
+  margin: 0 auto; /* centraliza */
+}
+
+.card {
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.container-name-type{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-img-id{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+text-align: right;
+}
+
+.type-pokemon{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 3px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.types{
+  display: flex;
+  flex-direction: column;
+}
+
+.id-pokemon{
+  font-size: 12px;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+button:hover:enabled {
+  background-color: #45a049;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .pokedex {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .pokedex {
+    grid-template-columns: 1fr; /* sempre 2 colunas no celular */
+    gap: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .types{
+    flex-direction: row;
+  }
+
+  .container-name-type{
+    align-items: left;
+    text-align: left;
+  }
+
+  header
+  {
+    font-size: 14px;
+    text-align: center;
+  }
+ #pagination {
+    gap: 10px;
+  }
+
+  #pagination button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  #page-info {
+    font-size: 0.9rem;
+    min-width: 80px;
+  }
+
+}
+
