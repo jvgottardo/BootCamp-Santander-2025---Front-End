@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Manipulando Dom</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShoowMe</div>
+
+      <!-- Botão de menu (visível só no celular) -->
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
+
+
+
+      <!-- Links do menu -->
+      <ul class="nav-links" id="nav-links">
+        <button class="menu-closed" id="menu-closed">
+          X
+        </button>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Eventos</a></li>
+
+        <li class="has-submenu">
+          <a href="#">Bandas ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Rock</a></li>
+            <li><a href="#">Pop</a></li>
+            <li><a href="#">Jazz</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <!-- <div class="logo">ShoowMe</div> -->
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo geral da navbar */
+header {
+  background: #111;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu em desktop */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Botão hamburguer (esconde no desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-closed {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Submenu escondido por padrão */
+.submenu {
+  display: none;
+  position: absolute;
+  background: #333;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  min-width: 50px;
+}
+
+.submenu li {
+  padding: 0.5rem 1rem;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu a:hover {
+  background: #3ba1cd;
+}
+
+/* Mostra submenu ao passar o mouse */
+.has-submenu {
+  position: relative; /* necessário pro submenu se posicionar */
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+/* Mobile: submenu escondido por padrão */
+.has-submenu .submenu {
+  display: none;
+}
+
+/* Quando aberto pelo JS */
+.has-submenu.open .submenu {
+  display: block;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Botão aparece no mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Menu fica escondido inicialmente */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: red;
+    position: absolute;
+    top: 0px; /* altura da navbar */
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  /* Quando o menu estiver ativo */
+  .nav-links.active {
+    display: flex;
+  }
+
+   .menu-closed.closed {
+    display: block;
+  }
+
+   .submenu {
+    position: static;
+    background: #222;
+    padding-left: 1rem;
+  }
+
+  .submenu li {
+    padding: 0.5rem 0;
+  }
+}
